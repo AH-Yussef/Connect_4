@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.connect_4.connect4_UI.Controllers.WelcomeController">
+   <children>
+      <AnchorPane layoutX="300.0" layoutY="200.0" prefHeight="160.0" prefWidth="600.0">
+         <children>
+            <StackPane prefHeight="160.0" prefWidth="600.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Connect 4">
+                     <font>
+                        <Font name="Menlo Regular" size="100.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="withPruningBtn" layoutX="400.0" layoutY="500.0" prefHeight="50.0" prefWidth="400.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff323" height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vs Computer with pruning">
+               <font>
+                  <Font name="Menlo Regular" size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <StackPane fx:id="withoutPruningBtn" layoutX="400.0" layoutY="420.0" prefHeight="50.0" prefWidth="400.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff323" height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vs Computer without pruning">
+               <font>
+                  <Font name="Menlo Regular" size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <TextField fx:id="level_input" layoutX="670.0" layoutY="592.0" prefHeight="26.0" prefWidth="68.0" style="-fx-background-color: white; -fx-border-color: black;">
+         <font>
+            <Font name="Menlo Regular" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="459.0" layoutY="598.0" text="max search depth (k)">
+         <font>
+            <Font name="Menlo Regular" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

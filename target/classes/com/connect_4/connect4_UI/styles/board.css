@@ -1,0 +1,23 @@
+#board {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-insets: -2px;
+}
+
+.rectangle {
+    -fx-fill: white;
+}
+
+.circle {
+    -fx-fill: white;
+    -fx-stroke: black;
+    -fx-stroke-width: 2;
+}
+
+.human-circle {
+    -fx-fill: #F90716;
+}
+.computer-circle {
+    -fx-fill: #FFF323;
+}

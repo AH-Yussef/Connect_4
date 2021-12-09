@@ -1,0 +1,105 @@
+#main {
+    -fx-background-color: white;
+}
+
+#enter-state-btn, #random-btn, #solve-btn {
+    -fx-background-color: #222831;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+    -fx-font-family: "Menlo";
+    -fx-font-size: 14px;
+}
+
+#state-input {
+    -fx-background-radius: 0;
+    -fx-background-color: #222831, white;
+}
+
+#state-input:focused {
+    -fx-background-color: #222831, white;
+}
+
+#steps-list > .viewport {
+   -fx-background-color: transparent;
+}
+
+#steps-list {
+   -fx-background-color: transparent;
+   -fx-border-width: 0 0 0 2;
+   -fx-border-color: #222831;
+}
+
+.step-card {
+   -fx-background-color: white;
+   -fx-border-width: 0 0 2 0;
+   -fx-border-color: #222831;
+}
+
+.step-card:hover {
+   -fx-background-color: #EEEEEE;
+}
+
+.move-circle {
+    -fx-fill: #FFD369;
+}
+
+.direction, .initial-state {
+    -fx-text-fill: #222831;
+    -fx-font-family: "Menlo";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold
+}
+
+.state-list {
+    -fx-text-fill: #222831;
+    -fx-font-family: "Menlo";
+    -fx-font-size: 15px;
+}
+
+.line {
+    -fx-fill: #FFD369;
+}
+
+.base-card {
+   -fx-background-color: #FFD369;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #222831;
+    -fx-background-radius: 5em;
+}
+
+.graph-node {
+    -fx-stroke: black;
+    -fx-stroke-width: 2;
+}
+
+.comp-graph-node {
+    -fx-fill: #FFF323;
+}
+
+.human-graph-node {
+    -fx-fill: #ed5a63;
+}
+
+.graph-node-label {
+    -fx-font-family: "Menlo";
+    -fx-font-size: 16px;
+}

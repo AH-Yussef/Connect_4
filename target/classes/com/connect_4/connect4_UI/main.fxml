@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="main" fx:id="alreadySolvedWarning" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.connect_4.connect4_UI.Controllers.MainController">
+   <children>
+      <TabPane prefHeight="800.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Game Board">
+               <content>
+                  <AnchorPane style="-fx-background-color: white;">
+                     <children>
+                        <StackPane layoutX="250.0" layoutY="730.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: white;">
+                           <children>
+                              <Rectangle fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="100.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a">
+                                 <font>
+                                    <Font name="Menlo Regular" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="350.0" layoutY="730.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: white;">
+                           <children>
+                              <Rectangle fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="100.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b">
+                                 <font>
+                                    <Font name="Menlo Regular" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="450.0" layoutY="730.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: white;">
+                           <children>
+                              <Rectangle fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="100.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="c">
+                                 <font>
+                                    <Font name="Menlo Regular" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="550.0" layoutY="730.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: white;">
+                           <children>
+                              <Rectangle fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="100.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="d">
+                                 <font>
+                                    <Font name="Menlo Regular" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="550.0" layoutY="730.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: white;">
+                           <children>
+                              <Rectangle fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="100.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="e">
+                                 <font>
+                                    <Font name="Menlo Regular" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="650.0" layoutY="730.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: white;">
+                           <children>
+                              <Rectangle fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="100.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="f">
+                                 <font>
+                                    <Font name="Menlo Regular" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="750.0" layoutY="730.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: white;">
+                           <children>
+                              <Rectangle fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="100.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="g">
+                                 <font>
+                                    <Font name="Menlo Regular" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="850.0" layoutY="730.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: white;">
+                           <children>
+                              <Rectangle fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="100.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="i">
+                                 <font>
+                                    <Font name="Menlo Regular" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <AnchorPane id="board" fx:id="gameBoard" layoutX="250.0" layoutY="130.0" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: white;" />
+                        <StackPane layoutX="30.0" layoutY="30.0" prefHeight="120.0" prefWidth="120.0">
+                           <children>
+                              <Circle fill="#fff323" radius="55.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+                              <Text fx:id="computerScore" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                 <font>
+                                    <Font name="Menlo Regular" size="30.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="1050.0" layoutY="30.0" prefHeight="120.0" prefWidth="120.0">
+                           <children>
+                              <Circle fill="#f90716" radius="55.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+                              <Text fx:id="humanScore" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                 <font>
+                                    <Font name="Menlo Regular" size="30.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <AnchorPane layoutX="160.0" layoutY="65.0" prefHeight="50.0" prefWidth="150.0">
+                           <children>
+                              <StackPane prefHeight="50.0" prefWidth="150.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Computer">
+                                       <font>
+                                          <Font name="Menlo Regular" size="30.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="930.0" layoutY="65.0" prefHeight="50.0" prefWidth="110.0">
+                           <children>
+                              <StackPane prefHeight="50.0" prefWidth="110.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Human">
+                                       <font>
+                                          <Font name="Menlo Regular" size="30.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="450.0" layoutY="65.0" prefHeight="50.0" prefWidth="300.0">
+                           <children>
+                              <StackPane prefHeight="50.0" prefWidth="300.0">
+                                 <children>
+                                    <Text fx:id="info" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font name="Menlo Regular" size="30.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </AnchorPane>
+                        <StackPane fx:id="backToWelcomeBtn" layoutX="30.0" layoutY="700.0" prefHeight="50.0" prefWidth="100.0">
+                           <children>
+                              <Rectangle fx:id="backToWelcome" arcHeight="5.0" arcWidth="5.0" fill="#fff323" height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="100.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="&lt; Back">
+                                 <font>
+                                    <Font name="Menlo Regular" size="22.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="200.0" layoutY="130.0" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;">
+                           <children>
+                              <Rectangle fill="WHITE" height="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="40.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+                                 <font>
+                                    <Font name="Menlo Regular" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="200.0" layoutY="230.0" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;">
+                           <children>
+                              <Rectangle fill="WHITE" height="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="40.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                                 <font>
+                                    <Font name="Menlo Regular" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="200.0" layoutY="330.0" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;">
+                           <children>
+                              <Rectangle fill="WHITE" height="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="40.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+                                 <font>
+                                    <Font name="Menlo Regular" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="200.0" layoutY="430.0" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;">
+                           <children>
+                              <Rectangle fill="WHITE" height="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="40.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+                                 <font>
+                                    <Font name="Menlo Regular" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="200.0" layoutY="530.0" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;">
+                           <children>
+                              <Rectangle fill="WHITE" height="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="40.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5">
+                                 <font>
+                                    <Font name="Menlo Regular" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="200.0" layoutY="630.0" prefHeight="100.0" prefWidth="40.0" style="-fx-background-color: white;">
+                           <children>
+                              <Rectangle fill="WHITE" height="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="40.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+                                 <font>
+                                    <Font name="Menlo Regular" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Analysis">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane hbarPolicy="ALWAYS" prefHeight="770.0" prefWidth="1200.0" vbarPolicy="ALWAYS">
+                           <content>
+                              <AnchorPane fx:id="graphContainer" prefHeight="200.0" prefWidth="200.0" />
+                           </content>
+                        </ScrollPane>
+                     </children></AnchorPane>
+               </content></Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
