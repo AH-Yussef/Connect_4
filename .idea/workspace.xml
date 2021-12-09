@@ -7,7 +7,7 @@
     <list default="true" id="7d886964-bcc4-42f7-aeed-712b0063b430" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/connect_4/connect4_UI/Algo/Heuristic/HeuristicCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connect_4/connect4_UI/Algo/Heuristic/HeuristicCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connect_4/connect4_UI/Controllers/WelcomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connect_4/connect4_UI/Controllers/WelcomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/connect_4/connect4_UI/Controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connect_4/connect4_UI/Controllers/GameController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

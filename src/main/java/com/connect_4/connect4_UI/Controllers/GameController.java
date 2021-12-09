@@ -131,9 +131,6 @@ public class GameController {
                 circle.getStyleClass().remove("human-circle");
             }
         }
-
-        int turn = new Random().nextInt(2) +1;
-        if(turn == Settings.ComputerTurn) computerPlay();
     }
 
     private boolean hasGameEnded() {
