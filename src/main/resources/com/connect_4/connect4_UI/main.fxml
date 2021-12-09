@@ -58,16 +58,6 @@
                               </Text>
                            </children>
                         </StackPane>
-                        <StackPane layoutX="550.0" layoutY="730.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: white;">
-                           <children>
-                              <Rectangle fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="100.0" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="e">
-                                 <font>
-                                    <Font name="Menlo Regular" size="18.0" />
-                                 </font>
-                              </Text>
-                           </children>
-                        </StackPane>
                         <StackPane layoutX="650.0" layoutY="730.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: white;">
                            <children>
                               <Rectangle fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="100.0" />
@@ -91,7 +81,7 @@
                         <StackPane layoutX="850.0" layoutY="730.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: white;">
                            <children>
                               <Rectangle fill="WHITE" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="100.0" />
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="i">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="h">
                                  <font>
                                     <Font name="Menlo Regular" size="18.0" />
                                  </font>

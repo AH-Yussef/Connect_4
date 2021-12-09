@@ -11,7 +11,7 @@ public class HeuristicCalculator {
         downUp = M.mapDownUp(board);
         upDown = M.mapUpDown(board);
         /* weight of four 90000 */
-        int four = 200_000*C.countFour(rows,columns,downUp,upDown,player);
+        int four = 120_000*C.countFour(rows,columns,downUp,upDown,player);
         /* 3 consecutive with twe free adjacent 80000 */
         int threeWith2FreeAdj = 90000*C.countThreeWith2FreeAdj(rows,columns,downUp,upDown,player);
         /* 3 consecutive with one side free & three separated 50000 */
